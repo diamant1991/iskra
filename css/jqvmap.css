@@ -15,11 +15,25 @@
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	background: #292929;
-	color: #ccc;
-	font-family: sans-serif, Verdana;
+	background: #dff2fb;
+	color: #000;
+	font-family: Arial,sans-serif;
+	font-size: 12px;
 	font-size: smaller;
 	padding: 6px;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.4);
+    box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.4);
+}
+.jqvmap-label:after{
+	content: "";
+	width: 22px;
+	height: 19px;
+	background: url(../images/tool.png)no-repeat;
+	display: block;
+	right: 16px;
+	top: -16px;
+	position: absolute;
 }
 .jqvmap-label strong
 {

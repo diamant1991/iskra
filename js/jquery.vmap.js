@@ -480,12 +480,12 @@
       params.container.mousemove(function (e) {
         if (map.label.is(':visible')) {
             var left = e.pageX - 15 - map.labelWidth;
-            var top = e.pageY - 15 - map.labelHeight;
+            var top = e.pageY + 55 - map.labelHeight;
             
             if(left < 0)
-               left = e.pageX + 15;
+               left = e.pageX + 35;
             if(top < 0)
-                top = e.pageY + 15;
+                top = e.pageY + 35;
             
             map.label.css({
                 left: left,
