@@ -208,7 +208,7 @@ h2 {
 }
 
 .top-menu ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .top-menu ul li a:after {
@@ -225,7 +225,7 @@ h2 {
     color: #000000;
 }
 
-.top-menu ul li.active a:after{
+.top-menu ul li.active a:after,.top-menu ul li:hover a:after{
     background: url(../images/Shape-3-copy-3.png);
     content: "";
 }
