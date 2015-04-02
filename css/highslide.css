@@ -87,6 +87,7 @@ a.highslide-credits i {
 	color: silver;
 	text-decoration: none;
 	font-size: 10px;
+	display: none !important;
 }
 a.highslide-credits:hover,
 a.highslide-credits:hover i {
