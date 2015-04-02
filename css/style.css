@@ -173,10 +173,10 @@ h2 {
 
 .top-menu ul li {
     float: left;   
-      height: 29px;
+    height: 29px;
 }
 
-.top-menu ul li.active {
+.top-menu ul li.active,.top-menu ul li:hover {
     background-color: #189bd7;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -185,7 +185,9 @@ h2 {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-
+.top-menu ul li:hover a{
+    color: #000;
+}
 .top-menu ul li:before {
     content: "";
     float: left;
@@ -195,7 +197,7 @@ h2 {
     margin-right: 18px;
 }
 
-.top-menu ul li:first-child:before, .top-menu ul li.active:before, .top-menu ul li.active + li:before  {
+.top-menu ul li:first-child:before, .top-menu ul li.active:before, .top-menu ul li.active + li:before,.top-menu ul li:hover:before  {
     width: 0px;
 }
 
@@ -223,7 +225,7 @@ h2 {
     color: #000000;
 }
 
-.top-menu ul li.active a:after {
+.top-menu ul li.active a:after{
     background: url(../images/Shape-3-copy-3.png);
     content: "";
 }
@@ -233,7 +235,7 @@ h2 {
     padding: 0px 2px;
     position: absolute;
     left: 0;
-    z-index: 2;
+    z-index: 999;
     margin-top: 12px;
     display: none;
 }
@@ -582,12 +584,8 @@ h2 {
     position: relative;
 }
     .slider-container{
-        position: absolute;
-        width: 340px;
-        height: 210px;
-        background-color: rgba(1,58,85,0.8);
-        right: 15px;
-        top: 95px;
+        width: 1015px;
+        height: 400px;
     }
 .without-color{
     background-color: transparent;
@@ -683,4 +681,14 @@ h2 {
     }
 .slideshow{
     cursor: pointer;
+}
+.slides-desc{
+    position: absolute;
+    right: 20px;
+    top: 95px;
+    width: 340px;
+    height: 210px;
+    background: rgba(1,58,85,0.8);
+    color: #fff;
+    padding: 10px 15px;
 }
