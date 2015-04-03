@@ -50,6 +50,7 @@ h2 {
 .main {
     width: 1015px;
     margin: auto;
+    height: 100%;
 }
 
 .header {
@@ -73,11 +74,10 @@ h2 {
 }
 
 .header-lang {
-    margin-top: 20px;
+    margin-top: 27px;
     color: #fff;
     font: 400 10px / 24.003px 'Times New Roman';
     text-align: right;
-    padding-right: 6px;
 }
 
 .header-lang a {
@@ -222,6 +222,8 @@ h2 {
     height: 4px;
     margin-left: 5px;
     margin-right: 17px;
+    position: relative;
+    top: -1px;
 }
 
 .top-menu ul li.active a {
@@ -266,12 +268,18 @@ h2 {
     background: #fff;
     opacity: 0.7;
     display: block;
-    width: 100%;
+    width: 101%;
     line-height: 33px;
 }
-
+    .main-product-block .product-name:after{
+        content: none;
+    }
+        .main-product-block .product-name:hover:after,.main-product-block:hover a:after{
+        content: none !important;
+    }
 .main-product-block .product-name:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: 1;
 }
 
 .footer {
@@ -372,6 +380,8 @@ h2 {
 .section {
     background-color: #ffffff;
     padding: 25px 18px;
+    min-height: 100%;
+    padding-bottom: 100px;
 }
 
 .breadcrumb {
@@ -655,9 +665,7 @@ h2 {
 .section-bot{
     padding-bottom: 70px;
 }
-.search-block{
-    margin-top: 7px;
-}
+
 .flexslider p{
     margin-top: 0;
 }
@@ -731,4 +739,7 @@ h2 {
 }
 .news-block .news:last-child img{
     margin-bottom: 0;
+}
+#vmap{
+    top:-30px;
 }
