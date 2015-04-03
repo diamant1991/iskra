@@ -714,6 +714,8 @@ h2 {
     border-bottom: 1px solid #c8eafa;
     margin-bottom: 0;
     padding-bottom: 12px;
+    font-size: 18px;
+    color: #000;
 }
 .main-sidebar-block .news-block{
     border-top: 1px solid #eaf7fc;
@@ -722,4 +724,11 @@ h2 {
 .partner-block{
     border-top: 1px solid #eaf7fc;
     padding-top: 12px;
+}
+.white-block{
+    height: 17px;
+    background-color: #fff;
+}
+.news-block .news:last-child img{
+    margin-bottom: 0;
 }
