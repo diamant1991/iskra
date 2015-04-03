@@ -4,7 +4,10 @@ html, body {
 }
 
 body {
-    background: url(../images/bg.png);
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 53% 1%;
+    background-color: #e1e1e1;
     color: #000000;
     font: 400 14px / 18.002px Arial;
 }
@@ -236,8 +239,8 @@ h2 {
     position: absolute;
     left: 0;
     z-index: 999;
-    margin-top: 12px;
     display: none;
+    top: 120px;
 }
 .with-drop{
     height: 31px !important;
@@ -691,4 +694,32 @@ h2 {
     background: rgba(1,58,85,0.8);
     color: #fff;
     padding: 10px 15px;
+}
+.lang{
+      color: #fff;
+      font: 400 11px / 24.003px 'Times New Roman';
+      margin-right: 7px;
+}
+.lang a{
+  text-decoration: none;
+  color: #fff;
+}
+    .lang a:hover{
+        text-decoration: underline;
+    }
+.lang .active{
+    color: #189bd7;
+}
+.main-sidebar-block h2{
+    border-bottom: 1px solid #c8eafa;
+    margin-bottom: 0;
+    padding-bottom: 12px;
+}
+.main-sidebar-block .news-block{
+    border-top: 1px solid #eaf7fc;
+    padding-top: 12px;
+}
+.partner-block{
+    border-top: 1px solid #eaf7fc;
+    padding-top: 12px;
 }

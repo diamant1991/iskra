@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 $('.with-drop').hover(function(){
-        $(".main-product-container").slideDown(300);
+        $(".main-product-container").slideDown(450);
        
       },
       function(){
