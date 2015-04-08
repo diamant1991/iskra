@@ -200,8 +200,9 @@ h2 {
     margin-right: 18px;
 }
 
-.top-menu ul li:first-child:before, .top-menu ul li.active:before, .top-menu ul li.active + li:before,.top-menu ul li:hover:before  {
-    width: 0px;
+.top-menu ul li:first-child:before, .top-menu ul li.active:before, .top-menu ul li.active + li:before,
+.top-menu ul li:hover:before  {
+    background: transparent;
 }
 
 .top-menu ul li a {
@@ -242,6 +243,7 @@ h2 {
     left: 0;
     z-index: 999;
     display: none;
+    visibility: hidden;
     top: 120px;
 }
 .with-drop{
@@ -767,3 +769,22 @@ h2 {
 #vmap{
     top:-30px;
 }
+.left-menu a{
+    font-size: 14px;
+    font-family: Arial,sans-serif !important;
+}
+.left-menu-child a{
+    font-size: 12px !important;
+}
+.left-menu-child{
+    font-size: 12px !important;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+    .left-menu-child li:before{
+        content: none !important;
+    }
+    .left-menu-child li{
+        line-height: 1 !important;
+        height: 25px;
+    }
